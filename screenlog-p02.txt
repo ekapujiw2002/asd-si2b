@@ -1,0 +1,202 @@
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Windows\system32>cd G:\eka-asd\code
+
+C:\Windows\system32>g:
+
+G:\eka-asd\code>c:\Python34\python.exe konv-detik.py
+Masukkan durasi dalam detik : 520
+
+G:\eka-asd\code>c:\Python34\python.exe konv-detik.py
+Masukkan durasi dalam detik : 520
+<class 'str'>
+
+G:\eka-asd\code>c:\Python34\python.exe konv-detik.py
+Masukkan durasi dalam detik : 25k
+<class 'str'>
+
+G:\eka-asd\code>c:\Python34\python.exe konv-detik.py
+Masukkan durasi dalam detik : 520
+520
+
+G:\eka-asd\code>c:\Python34\python.exe konv-detik.py
+Masukkan durasi dalam detik : 25k
+Traceback (most recent call last):
+  File "konv-detik.py", line 9, in <module>
+    input("Masukkan durasi dalam detik : ")
+ValueError: invalid literal for int() with base 10: '25k'
+
+G:\eka-asd\code>c:\Python34\python.exe konv-detik.py
+Masukkan durasi dalam detik : 1245
+0.3458333333333333
+0
+
+G:\eka-asd\code>c:\Python34\python.exe konv-detik.py
+Masukkan durasi dalam detik : 1245
+0 20 45
+
+G:\eka-asd\code>c:\Python34\python.exe konv-detik.py
+Masukkan durasi dalam detik : 1245
+00:20:45
+
+G:\eka-asd\code>c:\Python34\python.exe konv-detik.py
+Masukkan durasi dalam detik : 5678
+01:34:38
+
+G:\eka-asd\code>c:\Python34\python.exe konv-detik.py
+Masukkan durasi dalam detik : 25k
+Traceback (most recent call last):
+  File "konv-detik.py", line 11, in <module>
+    input("Masukkan durasi dalam detik : ")
+ValueError: invalid literal for int() with base 10: '25k'
+
+G:\eka-asd\code>c:\Python34\python.exe konv-detik.py
+Masukkan durasi dalam detik : 500
+00:08:20
+
+G:\eka-asd\code>c:\Python34\python.exe konv-detik.py
+Masukkan durasi dalam detik : 500lkmhgj
+ANDA GILAAAAAA!!!!
+00:00:00
+
+G:\eka-asd\code>c:\Python34\python.exe
+Python 3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (In
+tel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> x=1245
+>>> x
+1245
+>>> x % 2
+1
+>>> x and 1
+1
+>>> x=1244
+>>> x
+1244
+>>> x % 2
+0
+>>> x and 1
+1
+>>> x && 1
+  File "<stdin>", line 1
+    x && 1
+       ^
+SyntaxError: invalid syntax
+>>> x & 1
+0
+>>> x=1654643156864873616321589453
+>>> x
+1654643156864873616321589453
+>>> x % 2
+1
+>>> x & 1
+1
+>>> x=1654643156864873616321589456
+>>> x & 1
+0
+>>> x % 2
+0
+>>> dir(x)
+['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delatt
+r__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floor__', '_
+_floordiv__', '__format__', '__ge__', '__getattribute__', '__getnewargs__', '__g
+t__', '__hash__', '__index__', '__init__', '__int__', '__invert__', '__le__', '_
+_lshift__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__o
+r__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdivmod__', '__reduce__',
+ '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmu
+l__', '__ror__', '__round__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__
+', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__'
+, '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'bit_length', 'conj
+ugate', 'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']
+>>> x.bit_length()
+91
+>>> ^D
+  File "<stdin>", line 1
+    ♦
+    ^
+SyntaxError: invalid syntax
+>>> ^Z
+
+
+G:\eka-asd\code>c:\Python34\python.exe bil-genap.py
+Masukkan angka : 35
+
+G:\eka-asd\code>c:\Python34\python.exe bil-genap.py
+Masukkan angka : 35
+Bilangan ganjil
+
+G:\eka-asd\code>c:\Python34\python.exe bil-genap.py
+Masukkan angka : 24
+Bilangan genap
+
+G:\eka-asd\code>c:\Python34\python.exe bil-genap.py
+Masukkan angka : 32
+Bilangan genap
+
+G:\eka-asd\code>c:\Python34\python.exe bil-genap.py
+Masukkan angka : 35
+Bilangan ganjil
+
+G:\eka-asd\code>c:\Python34\python.exe bil-genap.py
+Masukkan angka : 35
+Bilangan ganjil
+
+G:\eka-asd\code>c:\Python34\python.exe bil-genap.py
+Masukkan angka : 32
+Bilangan genap
+
+G:\eka-asd\code>c:\Python34\python.exe bil-genap.py
+Masukkan angka : 32
+Bilangan genap
+
+G:\eka-asd\code>c:\Python34\python.exe bil-genap.py
+  File "bil-genap.py", line 4
+    print("Bilangan genap")
+        ^
+IndentationError: expected an indented block
+
+G:\eka-asd\code>c:\Python34\python.exe bil-genap.py
+Masukkan angka : 32
+Bilangan genap
+OK
+
+G:\eka-asd\code>c:\Python34\python.exe bil-genap.py
+  File "bil-genap.py", line 5
+    print("OK")
+    ^
+IndentationError: unexpected indent
+
+G:\eka-asd\code>c:\Python34\python.exe bil-genap.py
+Masukkan angka : 36
+Bilangan genap
+OK
+
+G:\eka-asd\code>c:\Python34\python.exe bil-genap.py
+Masukkan angka : 5
+Bilangan ganjil
+
+G:\eka-asd\code>c:\Python34\python.exe bil-genap.py
+Masukkan angka : 6
+Bilangan genap
+OK
+
+G:\eka-asd\code>c:\Python34\python.exe bil-genap.py
+Masukkan angka : 9
+Bilangan kelipatan 3
+
+G:\eka-asd\code>c:\Python34\python.exe bil-genap.py
+Masukkan angka : 6
+Bilangan genap
+OK
+
+G:\eka-asd\code>c:\Python34\python.exe bil-genap.py
+Masukkan angka : 6
+Bilangan genap
+OK
+
+G:\eka-asd\code>c:\Python34\python.exe bil-genap.py
+Masukkan angka : 9
+Bilangan kelipatan 3
+
+G:\eka-asd\code>

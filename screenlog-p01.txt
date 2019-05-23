@@ -1,0 +1,123 @@
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Windows\system32>python
+Python 3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (In
+tel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> ^Z
+
+
+C:\Windows\system32>cd \Python34
+
+C:\Python34>python
+Python 3.4.3 (v3.4.3:9b73f1c3e601, Feb 24 2015, 22:43:06) [MSC v.1600 32 bit (In
+tel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print "hello"
+  File "<stdin>", line 1
+    print "hello"
+                ^
+SyntaxError: Missing parentheses in call to 'print'
+>>> print ("hello")
+hello
+>>> print("hello")
+hello
+>>> print("-090")
+-090
+>>> print(89)
+89
+>>> print('\x77')
+w
+>>> print('\xaa')
+ª
+>>> print('\xaaHello world')
+ªHello world
+>>> print()
+
+>>> input("Nama : ")
+Nama : fred
+'fred'
+>>> n = input("Nama : ")
+Nama : green
+>>> n
+'green'
+>>> print("terimakasih atas informasinya mr/mrs ",n)
+terimakasih atas informasinya mr/mrs  green
+>>> m = "Anda akan segera kami hubungi"
+>>> m
+'Anda akan segera kami hubungi'
+>>> n
+'green'
+>>> print("terimakasih atas informasinya mr/mrs ",n,m)
+terimakasih atas informasinya mr/mrs  green Anda akan segera kami hubungi
+>>> print("terimakasih atas informasinya mr/mrs ",n,".",m)
+terimakasih atas informasinya mr/mrs  green . Anda akan segera kami hubungi
+>>> print("terimakasih atas informasinya mr/mrs {} -- {}".format(n,m))
+terimakasih atas informasinya mr/mrs green -- Anda akan segera kami hubungi
+>>> print("terimakasih atas informasinya mr/mrs {} -- {}".format(n))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: tuple index out of range
+>>> print("terimakasih atas informasinya mr/mrs {} -- {}".format(n,))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: tuple index out of range
+>>> print("terimakasih atas informasinya mr/mrs {} -- {}".format(n,m))
+terimakasih atas informasinya mr/mrs green -- Anda akan segera kami hubungi
+>>> print("terimakasih atas informasinya mr/mrs {} -- {}".format(n,m,m))
+terimakasih atas informasinya mr/mrs green -- Anda akan segera kami hubungi
+>>> print("terimakasih atas informasinya mr/mrs {nama} -- {ending}".format(n,m))
+
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'nama'
+>>> print("terimakasih atas informasinya mr/mrs {nama} -- {ending}".format(nama=
+n, ending=m))
+terimakasih atas informasinya mr/mrs green -- Anda akan segera kami hubungi
+>>> print("terimakasih atas informasinya mr/mrs {nama} -- {ending}".format(endin
+g=m, nama=n))
+terimakasih atas informasinya mr/mrs green -- Anda akan segera kami hubungi
+>>> x
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'x' is not defined
+>>> n
+'green'
+>>> type(x)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'x' is not defined
+>>> type(n)
+<class 'str'>
+>>> n = 5
+>>> type(n)
+<class 'int'>
+>>> n = 87.545438854236379+6
+>>> n
+93.54543885423638
+>>> type(n)
+<class 'float'>
+>>> cetak=print
+>>> type(cetak)
+<class 'builtin_function_or_method'>
+>>> cetak("HAHAHAHHAHAHA")
+HAHAHAHHAHAHA
+>>> ^D
+  File "<stdin>", line 1
+    ♦
+    ^
+SyntaxError: invalid syntax
+>>> ^Z
+
+
+C:\Python34>python.exe g:\eka-asd\code\tes1.py
+hello python
+
+C:\Python34>python.exe g:\eka-asd\code\tes1.py
+  File "g:\eka-asd\code\tes1.py", line 16
+    input("Hehehe")
+    ^
+IndentationError: unexpected indent
+
+C:\Python34>

@@ -1,0 +1,142 @@
+Python 3.7.2 (bundled)
+>>> %Run tuple1.py
+<class 'tuple'> ('hello', 'world', 'monday')
+>>> %Run tuple1.py
+<class 'tuple'> 3 ('hello', 'world', 'monday')
+>>> %Run tuple1.py
+<class 'tuple'> 3 ('hello', 'world', 'monday') hello
+>>> t1
+('hello', 'world', 'monday')
+>>> t1[::-1]
+('monday', 'world', 'hello')
+>>> dir(t1)
+['__add__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__rmul__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', 'count', 'index']
+>>> t1
+('hello', 'world', 'monday')
+>>> t1[0] = 'abc' 
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+>>> l1 = list(t1)
+>>> type(l1)
+<class 'list'>
+>>> l1
+['hello', 'world', 'monday']
+>>> t2 = tuple(l1)
+>>> t2
+('hello', 'world', 'monday')
+>>> %Run tuple1.py
+<class 'tuple'> 3 ('hello', 'world', 'monday') hello
+(1, 2, 4, 16)
+>>> type(r1)
+<class 'tuple'>
+>>> %Run tuple1.py
+<class 'tuple'> 3 ('hello', 'world', 'monday') hello
+(1, 2, 4, 16)
+>>> %Run tuple1.py
+<class 'tuple'> 3 ('hello', 'world', 'monday') hello
+(1, 2, 4, 16)
+>>> type(t3)
+<class 'tuple'>
+>>> %Run tuple1.py
+<class 'tuple'> 3 ('hello', 'world', 'monday') hello
+(1, 2, 4, 16)
+>>> t4
+('a', 5, 'hello')
+>>> %Run tuple1.py
+<class 'tuple'> 3 ('hello', 'world', 'monday') hello
+(1, 2, 4, 16)
+>>> t4
+('a', 5, 'hello', <function f1 at 0x02F98D68>)
+>>> t[3](2,3,4)
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+NameError: name 't' is not defined
+>>> t4[3](2,3,4)
+(2, 3, 4, 162)
+>>> %Run tuple1.py
+<class 'tuple'> 3 ('hello', 'world', 'monday') hello
+(1, 2, 4, 16)
+>>> t4
+('a', 5, 'hello', <function f1 at 0x02F98D68>, (4, 5, 6, 23))
+>>> t4[4]
+(4, 5, 6, 23)
+>>> t4[4][2]
+6
+>>> %Run tuple1.py
+<class 'tuple'> 3 ('hello', 'world', 'monday') hello
+(1, 2, 4, 16)
+>>> t4
+('a', 5, 'hello', <function f1 at 0x02FA8D68>, (4, 5, 6, 23), ['hi', '45', 3.421, 171])
+>>> type(t4[5])
+<class 'list'>
+>>> t4[5][1] = 5.67
+>>> t4
+('a', 5, 'hello', <function f1 at 0x02FA8D68>, (4, 5, 6, 23), ['hi', 5.67, 3.421, 171])
+>>> ('xc')
+'xc'
+>>> ('xc')*10
+'xcxcxcxcxcxcxcxcxcxc'
+>>> ('xc',)*10
+('xc', 'xc', 'xc', 'xc', 'xc', 'xc', 'xc', 'xc', 'xc', 'xc')
+>>> 'xc'*10
+'xcxcxcxcxcxcxcxcxcxc'
+>>> 'xc',*10
+Traceback (most recent call last):
+  File "<pyshell>", line 1
+    'xc',*10
+         ^
+SyntaxError: invalid syntax
+>>> 'xc', *10
+Traceback (most recent call last):
+  File "<pyshell>", line 1
+    'xc', *10
+          ^
+SyntaxError: invalid syntax
+>>> 'xc',*10
+Traceback (most recent call last):
+  File "<pyshell>", line 1
+    'xc',*10
+         ^
+SyntaxError: invalid syntax
+>>> ('xc',)*10
+('xc', 'xc', 'xc', 'xc', 'xc', 'xc', 'xc', 'xc', 'xc', 'xc')
+>>> x1 = 'xc',
+>>> x1
+('xc',)
+>>> type(x1)
+<class 'tuple'>
+>>> x1*10
+('xc', 'xc', 'xc', 'xc', 'xc', 'xc', 'xc', 'xc', 'xc', 'xc')
+>>> t1
+('hello', 'world', 'monday')
+>>> t3
+(4, 5, 6, 23)
+>>> t1+t3
+('hello', 'world', 'monday', 4, 5, 6, 23)
+>>> t5=t1+t3
+>>> t5
+('hello', 'world', 'monday', 4, 5, 6, 23)
+>>> t6=t3+t1
+>>> t6
+(4, 5, 6, 23, 'hello', 'world', 'monday')
+>>> t6-t1
+Traceback (most recent call last):
+  File "<pyshell>", line 1, in <module>
+TypeError: unsupported operand type(s) for -: 'tuple' and 'tuple'
+>>> t1
+('hello', 'world', 'monday')
+>>> set(t1)
+{'world', 'monday', 'hello'}
+>>> s1=set(t1)
+>>> type(s1)
+<class 'set'>
+>>> dir(s1)
+['__and__', '__class__', '__contains__', '__delattr__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__iand__', '__init__', '__init_subclass__', '__ior__', '__isub__', '__iter__', '__ixor__', '__le__', '__len__', '__lt__', '__ne__', '__new__', '__or__', '__rand__', '__reduce__', '__reduce_ex__', '__repr__', '__ror__', '__rsub__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__xor__', 'add', 'clear', 'copy', 'difference', 'difference_update', 'discard', 'intersection', 'intersection_update', 'isdisjoint', 'issubset', 'issuperset', 'pop', 'remove', 'symmetric_difference', 'symmetric_difference_update', 'union', 'update']
+>>> s2=set('hello')
+>>> s2
+{'l', 'o', 'h', 'e'}
+>>> s3=set('hello')
+>>> s3
+{'l', 'o', 'h', 'e'}
+>>> 
